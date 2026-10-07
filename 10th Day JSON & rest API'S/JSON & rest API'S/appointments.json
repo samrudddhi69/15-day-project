@@ -1,0 +1,50 @@
+[
+    {
+        "appointment_id": 101,
+        "patient_name": "Neha Patil",
+        "doctor_name": "Dr. Rajesh Kulkarni",
+        "department": "Cardiology",
+        "appointment_date": "2026-10-08",
+        "status": "Completed"
+    },
+    {
+        "appointment_id": 102,
+        "patient_name": "Aarav Joshi",
+        "doctor_name": "Dr. Arjun Mehta",
+        "department": "General Medicine",
+        "appointment_date": "2026-10-15",
+        "status": "Completed"
+    },
+    {
+        "appointment_id": 103,
+        "patient_name": "Pooja Deshmukh",
+        "doctor_name": "Dr. Vikram Patil",
+        "department": "Orthopedics",
+        "appointment_date": "2026-10-09",
+        "status": "Cancelled"
+    },
+    {
+        "appointment_id": 105,
+        "patient_name": "Snehal More",
+        "doctor_name": "Dr. Rajesh Kulkarni",
+        "department": "Cardiology",
+        "appointment_date": "2026-10-11",
+        "status": "Scheduled"
+    },
+    {
+        "appointment_id": 106,
+        "patient_name": "Kunal Pawar",
+        "doctor_name": "Dr. Meera Shah",
+        "department": "Neurology",
+        "appointment_date": "2026-10-11",
+        "status": "Scheduled"
+    },
+    {
+        "appointment_id": 107,
+        "patient_name": "Maya Desai",
+        "doctor_name": "Dr. Arjun Mehta",
+        "department": "General Medicine",
+        "appointment_date": "2026-10-12",
+        "status": "Scheduled"
+    }
+]
