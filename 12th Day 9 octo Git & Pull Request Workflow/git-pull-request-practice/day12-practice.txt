@@ -1,0 +1,6 @@
+Day 12: Git and Pull Request Workflow
+
+1. Learned about Git and GitHub.
+2. Created a GitHub repository.
+3. Created a separate branch.
+4. Practising commits and pull requests.
