@@ -1,0 +1,67 @@
+DOCKER FUNDAMENTALS — DAY 14
+
+Step 1: Install and Verify Docker
+
+sudo apt update
+sudo apt install docker.io -y
+docker --version
+sudo service docker start
+sudo docker info
+
+Step 2: Run the First Container
+
+sudo docker run hello-world
+
+Result: Successfully downloaded the hello-world image and ran the container.
+
+Step 3: Run an Ubuntu Container
+
+sudo docker run -it ubuntu bash
+cat /etc/os-release
+exit
+
+Result: Successfully entered the Ubuntu container and checked the operating system version.
+
+Step 4: Create Project Folder
+
+mkdir -p ~/docker-project
+cd ~/docker-project
+mkdir commands screenshots documentation
+
+Project Location: /home/samruddhi/docker-project
+Step 5: Build a Custom Docker Image
+
+sudo docker build -t my-hello-world ./hello-world
+sudo docker run --rm my-hello-world
+
+Result: Successfully built and ran the custom Docker image.
+
+Step 6: Docker Container Management
+
+sudo docker ps -a
+sudo docker run -dit --name my-ubuntu-container ubuntu bash
+sudo docker ps
+sudo docker exec my-ubuntu-container cat /etc/os-release
+sudo docker stop my-ubuntu-container
+sudo docker start my-ubuntu-container
+
+Result: Successfully created, inspected, stopped, and restarted an Ubuntu container.
+
+Step 7: Docker Volumes and Data Persistence
+
+sudo docker volume create my-project-volume
+sudo docker volume inspect my-project-volume
+sudo docker run --rm -v my-project-volume:/data ubuntu bash -c "echo 'Docker volume data is persistent' > /data/test.txt && cat /data/test.txt"
+sudo docker run --rm -v my-project-volume:/data ubuntu cat /data/test.txt
+
+Result: Created and inspected a Docker volume, saved data inside it, and verified that the data persisted across temporary containers.
+
+Step 8: Docker Networking
+
+sudo docker network create my-project-network
+sudo docker network inspect my-project-network
+sudo docker run -dit --name network-container-1 --network my-project-network ubuntu bash
+sudo docker run -dit --name network-container-2 --network my-project-network ubuntu bash
+sudo docker exec network-container-1 getent hosts network-container-2
+
+Result: Created a custom bridge network, connected two Ubuntu containers, and verified container-name resolution using Docker DNS.

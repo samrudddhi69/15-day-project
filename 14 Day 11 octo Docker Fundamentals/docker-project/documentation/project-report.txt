@@ -1,0 +1,34 @@
+DOCKER FUNDAMENTALS PROJECT REPORT
+
+1. Project Overview
+This project focuses on learning Docker fundamentals using Ubuntu on WSL. It covers Docker installation, images, containers, volumes, and networking.
+
+2. Docker Installation
+Docker was installed using the Ubuntu package manager. The installation was verified using Docker CLI commands.
+
+3. Hello World Container
+The hello-world image was downloaded from Docker Hub and executed successfully. The container displayed the expected Docker welcome message.
+
+4. Ubuntu Container
+An Ubuntu container was created and the operating system details were checked using the cat /etc/os-release command.
+
+5. Project Organization
+Created a docker-project directory with commands, screenshots, hello-world, and documentation folders. Docker commands and project results were documented.
+
+6. Custom Docker Image
+Created a Dockerfile using the hello-world image as the base image. Built a custom image named my-hello-world and ran it successfully.
+
+7. Container Management
+Created and inspected containers, checked the running container list, executed a command inside a running container, and practised stopping and restarting a container.
+
+8. Docker Volumes and Data Persistence
+Created and inspected a Docker volume named my-project-volume. Saved a text file in the volume and verified that its data remained available when accessed from another temporary container.
+
+9. Docker Networking
+Created a custom bridge network named my-project-network. Connected two Ubuntu containers to the network and verified that one container could resolve the other container's name using Docker DNS.
+
+10. Project Outcome
+Successfully practised Docker installation, image building, container lifecycle management, volume-based data persistence, and container networking.
+
+Project Status:
+Docker Fundamentals practical exercises from Steps 1 to 8 have been completed and documented. Final project verification and packaging remain.

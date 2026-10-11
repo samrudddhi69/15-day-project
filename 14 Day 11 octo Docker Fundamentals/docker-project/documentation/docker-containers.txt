@@ -1,0 +1,4 @@
+CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
+c698be51d94b   ubuntu        "bash"     14 minutes ago   Exited (0) 13 minutes ago             silly_liskov
+504b924484e5   ubuntu        "bash"     16 minutes ago   Exited (0) 14 minutes ago             eloquent_hawking
+e09eee49e0c9   hello-world   "/hello"   19 minutes ago   Exited (0) 19 minutes ago             suspicious_curran

@@ -1,0 +1,4 @@
+IMAGE                   ID             DISK USAGE   CONTENT SIZE   EXTRA
+hello-world:latest      5e2309035332       25.9kB         9.49kB   U    
+my-hello-world:latest   5e2309035332       25.9kB         9.49kB   U    
+ubuntu:latest           f144425ff09b        162MB         45.6MB   U    
